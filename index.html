@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Breakout - Jun's Mini Games</title>
+  <title>MINI GAME</title>
   <style>
     :root { --bg:#0b1220; --panel:#0f1724; --accent:#f6c85f; }
     html, body {
@@ -53,11 +53,11 @@
   <div class="wrap">
     <div class="card">
       <header>
-        <h1>벽돌깨기 (Breakout) — 마우스로 패들 이동, 스페이스로 시작/일시정지</h1>
+        <h1></h1>
         <div class="controls">
           <button id="reset">리셋</button>
           <button id="toggle">시작</button>
-          <div class="badge">이스터에그: 오른쪽 맨 벽돌을 4번 맞추면 이미지가 뜹니다.</div>
+          <div class="badge"></div>
         </div>
       </header>
 
@@ -66,9 +66,7 @@
         <div class="badge">Lives: <span id="lives">3</span></div>
         <div class="badge">Score: <span id="score">0</span></div>
         <div class="badge">Right-brick hits left: <span id="rbhits">4</span></div>
-        <div class="easter">힌트: 마우스로 패들을 움직이세요. 모바일도 지원됩니다.</div>
       </div>
-      <footer>이 파일을 GitHub에 올리면 자동으로 웹페이지로 작동합니다.</footer>
     </div>
   </div>
 
@@ -88,7 +86,7 @@
   let running = false;
 
   const paddle = { w:120, h:14, x:(W-120)/2, y:H-40 };
-  const ball = { r:8, x:W/2, y:H/2, vx:3, vy:-3 };
+  const ball = { r:8, x:W/2, y:H/2, vx:6, vy:-6 };
   const rows=5, cols=10, brickW=Math.floor((W-60)/cols), brickH=20, brickPadding=6, offsetTop=50, offsetLeft=30;
   const rightCol = cols-1;
   let bricks=[], lives=3, score=0;
